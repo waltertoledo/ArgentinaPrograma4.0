@@ -10,14 +10,14 @@ $mensaje = $_REQUEST['message'];
 
 $mail = new PHPMailer();
 $mail->CharSet = 'utf-8';
-$mail->Host = "smtp.gmail.com";
-$mail->From = "walter.toledo2012@gmail.com";
+$mail->Host = "AQUI DIRECCION DE HOST";
+$mail->From = "AQUI CUENTA DE GMAIL";
 $mail->IsSMTP();
 $mail->SMTPAuth = true;
-$mail->Username = "walter.toledo2012@gmail.com";
+$mail->Username = "AQUI CUENTA DE GMAIL";
 $mail->Password = 'AQUI CLAVE DE ACCESO';
 $mail->SMTPSecure = "tls";
-$mail->Port = 587;
+$mail->Port = 0;
 $mail->AddAddress($email);
 $mail->SMTPDebug  = 0;
 $mail->isHTML(true);
